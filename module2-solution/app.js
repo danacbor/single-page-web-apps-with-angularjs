@@ -12,9 +12,7 @@
         var tbc = this;
         tbc.items = ShoppingListCheckOffService.getItems('to_buy');
 
-        tbc.buyItem = function (index) {
-            ShoppingListCheckOffService.buyItem(index);
-        }
+        tbc.buyItem = ShoppingListCheckOffService.buyItem;
     }
 
     AlreadyBoughtControllerFunction.$inject = ['ShoppingListCheckOffService'];
